@@ -76,7 +76,7 @@ export default function IssuesPlatform() {
   // Enhanced Groq call to extract rewritten text + authorities
   const callGroqRewrite = async (text) => {
     try {
-      const GROQ_KEY = "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";
+      const GROQ_KEY = "${GROQ_AI_API_KEY}";
       if (!GROQ_KEY) throw new Error("Missing GROQ API key");
 
       const payload = {
