@@ -13,3 +13,5 @@ export const COMMENTS_COLLECTION_ID = "comments";
 export const STORAGE_BUCKET_ID = "68e67ce9000f486e7e00";
 
 export default client;
+
+// aadarsh Entered
