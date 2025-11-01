@@ -54,6 +54,7 @@ html.light, body.light {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
   font-weight: 600;
+  margin-top:10px;
 }
 
 .profile-icon:hover {
