@@ -32,10 +32,13 @@ html.light, body.light {
   --glass-shadow: var(--glass-shadow-light);
   --placeholder-color: rgba(0, 0, 0, 0);
 }
+
+/* Profile menu */
+
 .profile-menu {
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
   z-index: 1001;
 }
 
@@ -54,7 +57,6 @@ html.light, body.light {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
   font-weight: 600;
-  margin-top:10px;
 }
 
 .profile-icon:hover {
@@ -123,6 +125,7 @@ html.light, body.light {
   0% { opacity: 0; transform: translateY(-10px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
 
 html, body {
   margin: 0;
