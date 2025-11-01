@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaXTwitter, FaYoutube, FaInstagram } from "react-icons/fa6";
-
+import { auth, signIn, signOutUser } from "/auth"
 
 const functionalities = [
   { 
