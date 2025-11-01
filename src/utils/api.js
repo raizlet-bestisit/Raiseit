@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://localhost:8000'
+export const API_BASE_URL = 'https://raizeit-ai.pages.dev'
 
 export const apiClient = {
   async get(endpoint) {
