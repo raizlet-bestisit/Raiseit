@@ -59,6 +59,17 @@ const faqs = [
     a: 'The founder of RaizeIt is Arush Sharma. I am the founder, developer, marketer, and everything else of RaizeIt. My e-mail id : raizeitai1@gmail.com'
   },
 ];
+<div class="profile-menu">
+    <div class="profile-icon" id="profileIcon" title="Account">👤</div>
+    <div class="dropdown" id="dropdownMenu">
+      <ul>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="submit.html" id="menuSubmitLink">Submit a Tool</a></li>
+        <li><a href="feed.html" id="menuSubmitLink">Feed/Tools</a></li>
+        <li><a href="#" id="menuSignAction">Sign In</a></li>
+      </ul>
+    </div>
+  </div>
 
 const LandingPage = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
