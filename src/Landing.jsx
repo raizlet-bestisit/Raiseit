@@ -99,6 +99,20 @@ const LandingPage = () => {
   const textGradient = 'text-gradient';
   const buttonGradient = 'button-gradient';
   const glassEffectPrimary = 'glass-effect';
+  const profileIcon = document.getElementById('profileIcon');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+if (profileIcon && dropdownMenu) {
+  profileIcon.addEventListener('click', function(event) {
+    event.stopPropagation();
+    dropdownMenu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!dropdownMenu.contains(event.target) && event.target !== profileIcon) {
+      dropdownMenu.classList.remove('show');
+    }
+  });
+}
 
   return (
     <div className="bg-white flex flex-col items-center justify-between min-h-[calc(100vh-14rem)] text-white relative z-10 px-4 sm:px-6 py-8 bg-lumin-landing-bg">
@@ -127,20 +141,7 @@ const LandingPage = () => {
     </div>
   </div>
  
-  const profileIcon = document.getElementById('profileIcon');
-  const dropdownMenu = document.getElementById('dropdownMenu');
-if (profileIcon && dropdownMenu) {
-  profileIcon.addEventListener('click', function(event) {
-    event.stopPropagation();
-    dropdownMenu.classList.toggle('show');
-  });
 
-  document.addEventListener('click', function(event) {
-    if (!dropdownMenu.contains(event.target) && event.target !== profileIcon) {
-      dropdownMenu.classList.remove('show');
-    }
-  });
-}
 
           <p className="text-xl font-light sm:text-xl text-white mb-10 max-w-3xl mx-auto opacity-90 fade-in-up-delay-2">
             At RaizeIt, we aim to create a better world, users can report their problems here for free. We listen to you.
