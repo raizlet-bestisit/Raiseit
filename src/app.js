@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import LandingPage from './Landing';
 import IssuesPlatform from './app.jsx';
-import { auth, signIn, signOutUser } from './auth.js';
+import { AuthComponent } from './auth.jsx';
 function App() {
   const glassEffectPrimary = 'bg-white bg-opacity-5 backdrop-blur-md border border-gray-800/30';
 
@@ -26,7 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/app" element={<IssuesPlatform />} />
-            <Route path="/#" element={<signIn />} />
+            <Route path="/#" element={<AuthComponent />} />
           
             <Route path="*" element={<h2 className="text-center text-4xl text-white mt-20">404 - Page Not Found</h2>} />
           </Routes>
@@ -38,6 +38,7 @@ function App() {
 
 
 export default App;
+
 
 
 
