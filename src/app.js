@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import LandingPage from './Landing';
 import IssuesPlatform from './app.jsx';
-import { auth, signIn, signOutUser } from "./auth.js";
+import { auth, signIn, signOutUser } from './auth.js';
 function App() {
   const glassEffectPrimary = 'bg-white bg-opacity-5 backdrop-blur-md border border-gray-800/30';
 
@@ -38,6 +38,7 @@ function App() {
 
 
 export default App;
+
 
 
 
