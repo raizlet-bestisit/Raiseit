@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaXTwitter, FaYoutube, FaInstagram } from "react-icons/fa6";
-import { auth, signIn, signOutUser } from "./auth"
+import { AuthComponent } from './auth.jsx';
 
 const functionalities = [
   { 
@@ -136,7 +136,7 @@ if (profileIcon && dropdownMenu) {
         <li><a href="products.html">Our Products</a></li>
         <li><a href="submit.html" id="menuSubmitLink">Submit a Tool</a></li>
         <li><a href="feed.html" id="menuSubmitLink">Feed/Tools</a></li>
-        <li><a href="#" id="menuSignAction">Sign In</a></li>
+        <li><a href="#" id="AuthComponent">Sign In</a></li>
       </ul>
     </div>
   </div>
