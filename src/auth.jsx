@@ -140,7 +140,7 @@ const AuthComponent = () => {
             <li>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
-                requireAuth(() => window.location.href = '/submit');
+                requireAuth(() => window.location.href = '/app');
               }}>
                 Submit Issue
               </a>
@@ -194,29 +194,6 @@ const AuthComponent = () => {
           </div>
         </div>
       )}
-
-      {/* Protected Navigation Links */}
-      <a 
-        href="#"
-        id="submitNav"
-        onClick={(e) => {
-          e.preventDefault();
-          requireAuth(() => window.location.href = '/submit');
-        }}
-      >
-        Submit Issue
-      </a>
-
-      {/* Chatbot Icon */}
-      <div 
-        id="chatbot-icon"
-        onClick={() => requireAuth(() => {
-          console.log('Opening chatbot...');
-          // Add chatbot logic here
-        })}
-      >
-        💬
-      </div>
     </>
   );
 };
