@@ -2,17 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaXTwitter, FaYoutube, FaInstagram } from "react-icons/fa6";
 
-<div class="profile-menu">
-    <div class="profile-icon" id="profileIcon" title="Account">👤</div>
-    <div class="dropdown" id="dropdownMenu">
-      <ul>
-        <li><a href="products.html">Our Products</a></li>
-        <li><a href="submit.html" id="menuSubmitLink">Submit a Tool</a></li>
-        <li><a href="feed.html" id="menuSubmitLink">Feed/Tools</a></li>
-        <li><a href="#" id="menuSignAction">Sign In</a></li>
-      </ul>
-    </div>
-  </div>
+
 const functionalities = [
   { 
     icon: '',
@@ -125,7 +115,17 @@ const LandingPage = () => {
               </span>
             </span>
           </h2>
-
+          <div class="profile-menu">
+    <div class="profile-icon" id="profileIcon" title="Account">👤</div>
+    <div class="dropdown" id="dropdownMenu">
+      <ul>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="submit.html" id="menuSubmitLink">Submit a Tool</a></li>
+        <li><a href="feed.html" id="menuSubmitLink">Feed/Tools</a></li>
+        <li><a href="#" id="menuSignAction">Sign In</a></li>
+      </ul>
+    </div>
+  </div>
           <p className="text-xl font-light sm:text-xl text-white mb-10 max-w-3xl mx-auto opacity-90 fade-in-up-delay-2">
             At RaizeIt, we aim to create a better world, users can report their problems here for free. We listen to you.
           </p>
