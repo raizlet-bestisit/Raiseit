@@ -26,6 +26,8 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/app" element={<IssuesPlatform />} />
+            <Route path="/#" element={< />} />
+          
             <Route path="*" element={<h2 className="text-center text-4xl text-white mt-20">404 - Page Not Found</h2>} />
           </Routes>
         </div>
@@ -33,5 +35,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
